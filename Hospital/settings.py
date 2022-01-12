@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'customers',
     'orders',
     'products',
+    'dreg',
 
     'import_export',
     'widget_tweaks',

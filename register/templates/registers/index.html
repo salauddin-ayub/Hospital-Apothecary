@@ -103,7 +103,7 @@
                         <div class="(collapse)" id="collapseLayouts" aria-labelledby="headingOne"
                             data-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="{% url 'product_app:list'%}"><i class="fas fa-bars"></i><span class="ml-1">Products</span></a>
+                                <a class="nav-link" href="{% url 'product_app:list'%}"><i class="fas fa-bars"></i><span class="ml-1">Medicine</span></a>
                                 <a class="nav-link" href="{% url 'order_app:list'%}"><i class="fas fa-bars"></i><span class="ml-1">Orders</span></a>
                                 <a class="nav-link" href="{% url 'customer_app:list'%}"><i class="fas fa-bars"></i><span class="ml-1">Customers</span></a>
                               
@@ -153,14 +153,10 @@
               
            
                 <div class="card-body">
-                    <h2 class="card-header">Order Management System</h2>
-                
-                
+                    <h2 class="card-header">Hostel Apothecary System</h2>                              
                 </div>
 
-
                 <div class="row">
-
                     <div class="col">
                         <div class="col-md">
                             <div class="card bg-secondary text-center text-white  mb-3" id="orders-delivered">
@@ -175,7 +171,6 @@
                         <div class="mb-5 ml-3">
                             <a href="{% url 'order_app:list' %}" class="btn btn-warning"><i class="fas fa-eye"></i>  View Orders</a>
                         </div>
-
                     </div>
                   
                     <div class="col">
@@ -192,16 +187,13 @@
                         <div class="mb-5 ml-3">
                             <a href="{% url 'customer_app:list'%}" class="btn btn-warning"><i class="fas fa-eye"></i>  View details</a>
                         </div>
-
                     </div>
-
-              
 
                     <div class="col">
                         <div class="col-md">
                             <div class="card bg-primary text-center text-white ml-2 mb-3" id="total-orders">
                                 <div class="card-header">
-                                    <h5 class="card-title">Total Products</h5>
+                                    <h5 class="card-title">Total Medicines</h5>
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">{{total_products}}</h5>
@@ -227,24 +219,18 @@
                         <div class="mb-5 ml-3">
                             <a href="{% url 'customer_app:list'%}" class="btn btn-warning"><i class="fas fa-eye"></i>  View details</a>
                         </div>
-
                     </div>
                 </div>
                 <!--chart for content-->
                 <div class="card mb-4">
-
                     <div class="row">
                         <div class="col">
                             <div class="card-header"><i class="fas fa-table mr-1"></i>Summary Table<hr>
-                             
-                
-                                    {% include 'registers/index_search.html' %}
-                             
-                        </div>
-                        
+                                            
+                                    {% include 'registers/index_search.html' %}              
+                        </div>          
                     </div>
-                    
-                   
+                         
                        
                 </div>
                     <div class="card-body">
@@ -286,7 +272,7 @@
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid">
                         <div class="d-flex align-items-center justify-content-between small">
-                         <strong>   <div class="text-muted">Copyright &copy; Nirmal Pandey 2020</div></strong>
+                         <strong>   <div class="text-muted">Copyright &copy; Salauddin Ayub 2022</div></strong>
                             <div>
                                 <a href="#">Privacy Policy</a>
                                 &middot;

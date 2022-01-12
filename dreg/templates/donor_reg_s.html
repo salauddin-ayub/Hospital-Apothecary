@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+{% include 'navbar.html' %}
+<div class="col">
+    <div class="card border-dark" style="margin-left:18%;padding-right:15%;padding:50px;margin-bottom:10px;">
+        <h1 class="text-center">Welcome To Hospital Apothecary Blood Bank...</h1>
+            <br>
+            <h2 class="text-center">Details about {{forms.name.data}}</h2>
+
+            <div class= "donor_details m-5">
+                <p><strong>Name:</strong> {{forms.name.data}}</p>
+                <p><strong>Gender:</strong> {{forms.gender.data}}</p>
+                <p><strong>Date Of Birth:</strong> {{forms.date_of_birth.data}}</p>
+                <p><strong>Blood Group:</strong> <span class="text-uppercase">{{forms.blood_group.data}}</span></p>
+                <p><strong>Phone Number:</strong> {{forms.phone_number.data}}</p>
+                <p><strong>Email:</strong> {{forms.email.data}}</p>
+                <p><strong>Occupation:</strong> {{forms.occupation.data}}</p>
+                <p><strong>Home Address:</strong> {{forms.home_address.data}}</p>
+                <p><strong>Blood Donated Last Date:</strong> {{forms.last_donate_date.data}}</p>
+                <p><strong>Any Diseases:</strong> {{forms.any_diseases.data}}</p>
+                <p><strong>Allergies:</strong> {{forms.allergies.data}}</p>
+                <p><strong>Cardiac:</strong> {{forms.cardiac.data}}</p>
+                <p><strong>Bleeding Disorders:</strong> {{forms.bleeding_disorders.data}}</p>
+                <p><strong>HBSAG HCV HIV:</strong> {{forms.hbsAg_hcv_hIV.data}}</p>
+    </div>
+    <h3 class="text-center">{{forms.name.data}} Your Registration Is Successful...</h3>
+</div>
+
+    <!-- <div class="container-fluid">
+        <div class="form_body">
+            <h1 class="text-center">Welcome To Hospital Apothecary Blood Bank...</h1>
+            <br>
+            <h2 class="text-center">Details about {{forms.name.data}}</h2>
+
+            <div class= "donor_details m-5">
+                <p><strong>Name:</strong> {{forms.name.data}}</p>
+                <p><strong>Gender:</strong> {{forms.gender.data}}</p>
+                <p><strong>Date Of Birth:</strong> {{forms.date_of_birth.data}}</p>
+                <p><strong>Blood Group:</strong> <span class="text-uppercase">{{forms.blood_group.data}}</span></p>
+                <p><strong>Phone Number:</strong> {{forms.phone_number.data}}</p>
+                <p><strong>Email:</strong> {{forms.email.data}}</p>
+                <p><strong>Occupation:</strong> {{forms.occupation.data}}</p>
+                <p><strong>Home Address:</strong> {{forms.home_address.data}}</p>
+                <p><strong>Blood Donated Last Date:</strong> {{forms.last_donate_date.data}}</p>
+                <p><strong>Any Diseases:</strong> {{forms.any_diseases.data}}</p>
+                <p><strong>Allergies:</strong> {{forms.allergies.data}}</p>
+                <p><strong>Cardiac:</strong> {{forms.cardiac.data}}</p>
+                <p><strong>Bleeding Disorders:</strong> {{forms.bleeding_disorders.data}}</p>
+                <p><strong>HBSAG HCV HIV:</strong> {{forms.hbsAg_hcv_hIV.data}}</p>
+        </div>
+
+            <h3 class="text-center">{{forms.name.data}} Your Registration Is Successful...</h3>
+
+        </div>
+
+    </div> -->
+
+
+
+
+{% endblock  %}
