@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Dashboard</title>
+    <title>Hospital &nbsp; Dashboard</title>
+    <link rel="icon" href="{% static 'image/logo-icon.png' %}">
     <!--I include this later-->
     <!-- <script src="{% static 'js/jquery-3.1.1.min.js' %}" crossorigin="anonymous"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -75,8 +76,6 @@
             </div>
         </div>
     </div>
-  
-
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
@@ -106,6 +105,7 @@
                                 <a class="nav-link" href="{% url 'product_app:list'%}"><i class="fas fa-bars"></i><span class="ml-1">Medicine</span></a>
                                 <a class="nav-link" href="{% url 'order_app:list'%}"><i class="fas fa-bars"></i><span class="ml-1">Orders</span></a>
                                 <a class="nav-link" href="{% url 'customer_app:list'%}"><i class="fas fa-bars"></i><span class="ml-1">Customers</span></a>
+                                <a class="nav-link" href="{% url 'dregsite:dregsite'%}"><i class="fas fa-bars"></i><span class="ml-1">Donor Registration</span></a>
                               
                             </nav>
                         </div>

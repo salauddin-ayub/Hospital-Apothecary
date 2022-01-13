@@ -17,6 +17,7 @@ urlpatterns = [
 	# path('products/',include('products.urls', namespace="product_app")),
 	# path('orders/',include('orders.urls', namespace="order_app")),
     path('donorreg/',include(('dreg.urls', 'dregsite'), namespace='dregsite')),
+    path('search/',include(('search.urls','searchsite'), namespace='searchsite')),
     path('user/',include(('register.urls', 'register_app'), namespace='register_app')),
     path('customers/',include(('customers.urls', 'customer_app'), namespace='customer_app')),
     path('products/',include(('products.urls', 'product_app'), namespace='product_app')),

@@ -47,10 +47,10 @@ def dashboard(request):
 
 	order_total_price=0.00
  
-	# for order in today_order:
-	# 	per_total_price = float(order.product.price) * order.quantity
-	# 	order_total_price += per_total_price
-	# print(order_total_price)
+	for order in today_order:
+		per_total_price = float(order.product.price) * order.quantity
+		order_total_price += per_total_price
+	print(order_total_price)
 	
 	context={
 			'customers':customers,'orders_total_price':order_total_price,'total_orders':total_orders,
